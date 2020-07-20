@@ -6,4 +6,4 @@ From this day I am gonna make 30 submits in the next 30 days continuously. Those
 
 | day   | Project Name    | source Code/preview |
 | :---  | :-------------: | ------------------: |
-| day-1 | Custom Cursor   | < https://codepen.io/Web_Cifar/pen/OJMrzaB> |
+| day-1 | Custom Cursor   | https://codepen.io/Web_Cifar/pen/OJMrzaB |
