@@ -6,3 +6,4 @@
 | day   | Project Name    | source Code/preview |
 | :---  | :-------------: | ------------------: |
 | day-1 | Custom Cursor   | https://codepen.io/Web_Cifar/pen/OJMrzaB |
+| day-2 | Theme Switcher  | https://codepen.io/Web_Cifar/pen/OJMrdbq |
