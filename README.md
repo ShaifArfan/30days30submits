@@ -7,4 +7,4 @@
 | :---  | :-------------: | ------------------: |  ---------------------------------------: |
 | day-1 | Custom Cursor   | https://codepen.io/Web_Cifar/pen/OJMrzaB | https://youtu.be/de4W0EHMuUs |
 | day-2 | Theme Switcher  | https://codepen.io/Web_Cifar/pen/OJMrdbq | https://youtu.be/D1yg4T37qYo |
-| day-2 | Random Dad Jokes Generator | https://codepen.io/Web_Cifar/pen/XWXOZWX |  |
+| day-3 | Random Dad Jokes Generator | https://codepen.io/Web_Cifar/pen/XWXOZWX |  |
