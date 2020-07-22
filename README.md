@@ -5,5 +5,5 @@
 
 | day   | Project Name    | source Code/preview |                       YouTube Video       |
 | :---  | :-------------: | ------------------: |  ---------------------------------------: |
-| day-1 | Custom Cursor   | https://codepen.io/Web_Cifar/pen/OJMrzaB | https://youtu.be/D1yg4T37qYo |
-| day-2 | Theme Switcher  | https://codepen.io/Web_Cifar/pen/OJMrdbq | https://youtu.be/de4W0EHMuUs |
+| day-1 | Custom Cursor   | https://codepen.io/Web_Cifar/pen/OJMrzaB | https://youtu.be/de4W0EHMuUs |
+| day-2 | Theme Switcher  | https://codepen.io/Web_Cifar/pen/OJMrdbq | https://youtu.be/D1yg4T37qYo |
