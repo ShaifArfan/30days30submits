@@ -16,10 +16,12 @@ body{
   align-items: center;
   justify-content: center;
 }
-
+section{
+  width: 100%;
+}
 .container{
   width: 90%;
-  max-width: 500px;
+  max-width: 450px;
   margin: 0 auto;
 }
 form,.number-fact{
