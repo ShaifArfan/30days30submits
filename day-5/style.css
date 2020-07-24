@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -95,10 +95,10 @@ form ion-icon{
   width: 100%;
   padding: 20px;
   position: absolute;
-  background-color: #000000b8;
+  background-color: #00000040;
   color: aliceblue;
   bottom: -70px;
-  font-weight: 400;
+  font-weight: 300;
   transition: .5s ease-in-out bottom;
 }
 .item:hover h3{
