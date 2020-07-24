@@ -9,7 +9,7 @@ html{
   font-size: 100%;
 }
 body{
-  background-color: #f3f5f4;
+  background-color: #DBE2E9;
 }
 img{
   width: 100%;
@@ -25,12 +25,13 @@ section{
   margin: 100px 0;
 }
 .container{
+  background-color: white;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  box-shadow: 0px 0px 20px 2px #00000024;
+  box-shadow: 0px 0px 61px 7px #5e849c40;
   padding: 50px 20px;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .header{
   display: flex;
