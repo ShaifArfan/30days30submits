@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* colors */
+body{
+  --color-1: #2F3144;
+  --color-2: white;
+  --color-3:#FFBC00;
+  --color-4:#DA8F00;
+  --color-5: #E7E8EC;
+  --color-6:#F1F2F7;
+}
+html{
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+}
+section{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--color-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  padding: 100px 30px;
+  width: 100%;
+  max-width: 1200px;
+}
+.container .head h1{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  color: var(--color-1);
+  margin-bottom: 50px;
+  max-width: 700px;
+}
+.container .main{
+  display: flex;
+  flex-direction: column;
+}
+.left .card{
+  width: 100%;
+  padding: 40px 20px;
+  border-radius: 10px;
+  transition: .3s ease background-color;
+  margin-bottom: 20px;
+}
+.left .card ion-icon{
+  padding: 15px;
+  background-color: var(--color-3);
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+}
+.left .card h2{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-1);
+  margin: 10px 0;
+}
+.left .card p{
+  font-size: 16px;
+  font-weight: 400;
+}
+.left .card:hover{
+  background-color: var(--color-3);
+}
+.left .card:hover ion-icon{
+  color: var(--color-1);
+  background-color: var(--color-2);
+}
+.right h1{
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+.right .blog-item{
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.right h3{
+  font-size: 18px;
+  font-weight: 700;
+}
+.right p{
+  color: var(--color-4);
+  font-size: 16px;
+  font-weight: 400;
+}
+.right .blog-item:hover{
+  background-color: var(--color-5);
+  border-radius: 8px;
+}
+@media only screen and (min-width: 768px){
+  .container .main{
+    flex-direction: row;
+  }
+  .container .left{
+    flex: .7;
+    display: grid;
+    grid-template:1fr 1fr / 1fr 1fr ;
+    grid-gap: 20px;
+  }
+  .container .right{
+    flex: .3;
+    padding: 30px 20px;
+  }
+  .container .main .card{
+    width: 100%;
+  }
+  .container .head h1{
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 50px;
+  }
+}
