@@ -83,6 +83,7 @@ section{
 .right .blog-item{
   padding: 10px 20px;
   margin-top: 20px;
+  cursor: pointer;
 }
 .right h3{
   font-size: 18px;
@@ -97,7 +98,7 @@ section{
   background-color: var(--color-5);
   border-radius: 8px;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 700px){
   .container .main{
     flex-direction: row;
   }
