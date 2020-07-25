@@ -10,3 +10,4 @@
 | day-3 | Random Dad Jokes Generator | https://codepen.io/Web_Cifar/pen/XWXOZWX | https://youtu.be/UDIfuvLEkjU |
 | day-4 | Numbers API     | https://codepen.io/Web_Cifar/pen/PoZLpoG | https://youtu.be/s3LFCErzmHI |
 | day-5 | Countdown Timer | https://codepen.io/Web_Cifar/pen/OJMGPbb | https://youtu.be/_a4XCarxwr8 |
+| day-6 | Featured Section| https://codepen.io/Web_Cifar/pen/WNrWxYG | Coming Soon 🔜 |
