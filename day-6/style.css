@@ -75,6 +75,12 @@ section{
   color: var(--color-1);
   background-color: var(--color-2);
 }
+
+.right{
+  border: 1px solid var(--color-5);
+  border-radius: 10px;
+  padding: 20px;
+}
 .right h1{
   font-size: 22px;
   font-weight: 700;
@@ -110,7 +116,7 @@ section{
   }
   .container .right{
     flex: .3;
-    padding: 30px 20px;
+    margin: 30px;
   }
   .container .main .card{
     width: 100%;
