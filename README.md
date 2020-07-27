@@ -11,3 +11,5 @@
 | day-4 | Numbers API     | https://codepen.io/Web_Cifar/pen/PoZLpoG | https://youtu.be/s3LFCErzmHI |
 | day-5 | Countdown Timer | https://codepen.io/Web_Cifar/pen/OJMGPbb | https://youtu.be/_a4XCarxwr8 |
 | day-6 | Featured Section| https://codepen.io/Web_Cifar/pen/WNrWxYG | https://youtu.be/L4k3_elYm2U |
+| day-7 | Photo gallery p-1| https://codepen.io/Web_Cifar/pen/wvMbwdj | https://youtu.be/URymtcPO11A |
+| day-8 | Photo gallery p-2| Coming soon 🔜 | Coming soon 🔜 |
