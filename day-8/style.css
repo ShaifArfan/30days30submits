@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+}
+body{
+  background-color: #DBE2E9;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section{
+  min-height:100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+.container{
+  background-color: white;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 61px 7px #5e849c40;
+  padding: 50px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1{
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+form{
+  margin-top: 30px;
+  width: 80%;
+  max-width: 300px;
+  position: relative;
+}
+input{
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.479);
+  font-size: 20px;
+  width: 100%;
+  outline: none;
+  color: gray;
+  background-color: transparent;
+}
+input::placeholder{
+  opacity: .5;
+  color: gray;
+  font-family: 'Montserrat';
+}
+form ion-icon{
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  opacity: .5;
+  color: gray;
+}
+.gallery{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+  margin-top: 50px;
+  grid-gap: 20px;
+}
+.item{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius:8px;
+  transition: .3s ease box-shadow;
+}
+
+.item:hover{
+  box-shadow: 0px 0px 20px 3px #00000042;
+}
+.item:nth-last-child(1){
+  margin-bottom: 0;
+}
+.item h3{
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: #00000040;
+  color: aliceblue;
+  bottom: -70px;
+  font-weight: 300;
+  transition: .5s ease-in-out bottom;
+}
+.item:hover h3{
+  bottom: 0;
+}
+.load-more{
+  display: inline-block;
+  margin-top:30px;
+  padding: 20px 50px;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: azure;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media only screen and (min-width: 900px){
+ .container{
+   max-width: 1160px;
+   padding: 100px;
+ }
+ .header{
+   flex-direction: row;
+   justify-content: space-between;
+ }
+ .header h1{
+   font-size: 50px;
+ }
+ .header input{
+   font-size: 24px;
+ }
+ .header ion-icon{
+   font-size: 24px;
+ }
+ .gallery{
+   grid-gap: 30px;
+ }
+ 
+}
