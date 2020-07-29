@@ -33,7 +33,11 @@ section{
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 1px 1px 20px 0px #0000001c;
+  box-shadow: 0px 0px 10px 0px #0000001c;
+  transition: .3s ease box-shadow;
+}
+.container div:hover{
+  box-shadow: 0px 0px 60px 0px #0000001f;
 }
 .container h2{
   font-size: 60px;
