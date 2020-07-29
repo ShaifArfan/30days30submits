@@ -13,3 +13,4 @@
 | day-6 | Featured Section| https://codepen.io/Web_Cifar/pen/WNrWxYG | https://youtu.be/L4k3_elYm2U |
 | day-7 | Photo gallery p-1| https://codepen.io/Web_Cifar/pen/wvMbwdj | https://youtu.be/URymtcPO11A |
 | day-8 | Photo gallery p-2 [Pexels API]| https://github.com/ShaifArfan/30days30submits/tree/master/day-8 | https://youtu.be/gGBpmzLN1Hw |
+| day-9 | Read More Button| https://codepen.io/Web_Cifar/pen/OJMeVxx | https://youtu.be/TvVY8c1uvG8 |
