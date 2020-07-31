@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+nav{
+  position: relative;
+}
+ul{
+  background-color: white;
+  border-radius: 4px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:-7px 9px 17px 0px #00000017;
+}
+li a{
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+}
+li:hover a{
+  color: crimson;
+}
+.icon{
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow:0px 0px 17px 0px #00000017;
+  background-image: url(https://image.flaticon.com/icons/svg/545/545705.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  transition:.8s ease transform;
+  cursor: pointer;
+}
+.icon.close{
+  transform: translateY(-50%) rotate(360deg);
+    background-image: url(https://image.flaticon.com/icons/svg/748/748122.svg);
+}
+nav ul{
+  width: 0px;
+  overflow: hidden;
+  transform: translateX(50px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s ease;
+  transition-property: opacity,width, transform, padding;
+  padding: 20px;
+  margin: -20px;
+}
+/* nav.show{
+  width: auto;
+} */
+nav.show ul{
+  width: 450px;
+  overflow: hidden;
+  transform: translateX(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+nav{
+  position: absolute;
+  top: 50px;
+  right: 150px;
+}
+/* @media only screen and (max-width: 768px){
+  nav ul{
+    flex-direction: column;
+    width: fit-content;
+    height: 0;
+    padding: 0;
+    transform:translateX(0px) translateY(-30px);
+    transition-property: opacity,height;
+    padding-right: 100px;
+  }
+  nav.show ul{
+    height: 200px;
+    width: fit-content;
+    transform:translateX(0px) translateY(-30px);
+  }
+  .icon{
+    top: 0;
+    right: 0;
+  }
+  nav{
+    right: 10px;
+    top: 50px;
+  }
+} */
+@media only screen and (max-width: 768px){
+  body{
+    font-size: 14px;
+  }
+  li a{
+    padding: 5px 10px;
+  }
+  nav ul{
+    padding: 15px;
+  }
+  nav.show ul {
+    width: 260px;
+    padding: 15px;
+  }
+  nav .icon{
+    top: 50%;
+    right: -70px;
+    width: 45px;
+    height: 45px;
+    
+  }
+  nav{
+    top: 30px;
+    right: 80px;
+  }
+}

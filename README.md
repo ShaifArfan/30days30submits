@@ -15,3 +15,4 @@
 | day-8 | Photo gallery p-2 [Pexels API]| https://github.com/ShaifArfan/30days30submits/tree/master/day-8 | https://youtu.be/gGBpmzLN1Hw |
 | day-9 | Read More Button| https://codepen.io/Web_Cifar/pen/OJMeVxx | https://youtu.be/TvVY8c1uvG8 |
 | day-10 | key Code Generator App | https://codepen.io/Web_Cifar/pen/eYJwvKV | https://youtu.be/jOLwRV6xSwA |
+| day-11 | CSS animated Menu | https://codepen.io/Web_Cifar/pen/eYJwvKV | https://youtu.be/jOLwRV6xSwA |
