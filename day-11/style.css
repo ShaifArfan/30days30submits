@@ -1,6 +1,6 @@
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 body{
@@ -8,13 +8,10 @@ body{
   height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: 'Montserrat';
   font-size: 18px;
-}
-nav{
-  position: relative;
 }
 ul{
   background-color: white;
@@ -23,7 +20,7 @@ ul{
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow:-7px 9px 17px 0px #00000017;
+  box-shadow: -7px 9px 17px 0px #00000017;
 }
 li a{
   display: inline-block;
@@ -34,78 +31,51 @@ li a{
 li:hover a{
   color: crimson;
 }
+nav{
+  position: relative;
+}
 .icon{
   position: absolute;
-  content: '';
   top: 50%;
   transform: translateY(-50%);
-  right: -100px;
+  right: -80px;
   height: 60px;
   width: 60px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  box-shadow:0px 0px 17px 0px #00000017;
   background-image: url(https://image.flaticon.com/icons/svg/545/545705.svg);
   background-position: center;
-  background-size: 50%;
   background-repeat: no-repeat;
-  transition:.8s ease transform;
+  background-size: 50%;
   cursor: pointer;
+  box-shadow: 0px 0px 17px 0px #00000017;
+  transition: .5s ease transform;
 }
 .icon.close{
-  transform: translateY(-50%) rotate(360deg);
-    background-image: url(https://image.flaticon.com/icons/svg/748/748122.svg);
+  transform:translateY(-50%) rotate(360deg);
+  background-image: url(https://image.flaticon.com/icons/svg/748/748122.svg);
 }
-nav ul{
+ul{
   width: 0px;
   overflow: hidden;
   transform: translateX(50px);
   opacity: 0;
   pointer-events: none;
   transition: .5s ease;
-  transition-property: opacity,width, transform, padding;
   padding: 20px;
-  margin: -20px;
 }
-/* nav.show{
-  width: auto;
-} */
 nav.show ul{
   width: 450px;
-  overflow: hidden;
-  transform: translateX(0px);
+  transform: translate(0px);
   opacity: 1;
   pointer-events: all;
 }
 nav{
   position: absolute;
-  top: 50px;
-  right: 150px;
+  top: 10px;
+  right: 100px;
 }
-/* @media only screen and (max-width: 768px){
-  nav ul{
-    flex-direction: column;
-    width: fit-content;
-    height: 0;
-    padding: 0;
-    transform:translateX(0px) translateY(-30px);
-    transition-property: opacity,height;
-    padding-right: 100px;
-  }
-  nav.show ul{
-    height: 200px;
-    width: fit-content;
-    transform:translateX(0px) translateY(-30px);
-  }
-  .icon{
-    top: 0;
-    right: 0;
-  }
-  nav{
-    right: 10px;
-    top: 50px;
-  }
-} */
+
 @media only screen and (max-width: 768px){
   body{
     font-size: 14px;
@@ -116,19 +86,16 @@ nav{
   nav ul{
     padding: 15px;
   }
-  nav.show ul {
+  nav.show ul{
     width: 260px;
-    padding: 15px;
   }
-  nav .icon{
-    top: 50%;
-    right: -70px;
+  .icon{
     width: 45px;
     height: 45px;
-    
+    right: -50px;
   }
   nav{
-    top: 30px;
-    right: 80px;
+    top: 10px;
+    right: 60px;
   }
 }
