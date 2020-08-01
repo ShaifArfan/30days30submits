@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section>
+    <div class="item show"><img src="./img/img-1.jpg" alt=""></div>
+    <div class="item"><img src="./img/img-2.jpg" alt="">
+      <div class="caption">
+        <h2>Beauty Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi amet assumenda cupiditate eaque ex in dolores corrupti tempore rem, autem qui possimus rerum deserunt aliquam sequi quibusdam recusandae tempora doloremque voluptatem adipisci, dolore quae! Tempore magnam minima mollitia tempora esse!</p>
+      </div>
+    </div>
+    <div class="item"><img src="./img/img-3.jpg" alt=""></div>
+    <div class="item"><img src="./img/img-4.jpg" alt=""></div>
+  </section>
+  <script>
+    const items = document.querySelectorAll('.item');
+    items.forEach(item=>{
+      item.addEventListener('click',()=>{
+        console.log('test')
+        items.forEach(item=>item.classList.remove('show'));
+        item.classList.add('show')
+      })
+    })
+  </script>
+</body>
+</html>
