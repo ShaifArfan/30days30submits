@@ -16,4 +16,5 @@
 | day-9 | Read More Button| https://codepen.io/Web_Cifar/pen/OJMeVxx | https://youtu.be/TvVY8c1uvG8 |
 | day-10 | key Code Generator App | https://codepen.io/Web_Cifar/pen/eYJwvKV | https://youtu.be/jOLwRV6xSwA |
 | day-11 | CSS animated Menu | https://codepen.io/Web_Cifar/pen/eYJqdxy | https://youtu.be/q8vmz-R_3Ck |
-| day-12 | CSS Flex Gallery | https://codepen.io/Web_Cifar/pen/wvMVmZN | Coming Soon 🔜 ✌🤘✌🎶🐱‍👤  |
+| day-12 | CSS Flex Gallery | https://codepen.io/Web_Cifar/pen/wvMVmZN | https://youtu.be/Z6IZ2NOEzmw  |
+| day-13 | Analog Clock | https://codepen.io/Web_Cifar/pen/LYNYmpb | coming soon 🔜  |
