@@ -1,8 +1,6 @@
 const clockEl = document.querySelector('.clock');
 const buttons = document.querySelectorAll('.format button')
-const intervalID = setInterval(()=>{
-    generateTime();
-},1000)
+const intervalID = setInterval( generateTime, 1000)
 
 // console.log(date)
 function generateTime (){
