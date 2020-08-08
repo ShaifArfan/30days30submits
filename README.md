@@ -19,4 +19,5 @@
 | day-12 | CSS Flex Gallery | https://codepen.io/Web_Cifar/pen/wvMVmZN | https://youtu.be/Z6IZ2NOEzmw  |
 | day-13 | Analog Clock | https://codepen.io/Web_Cifar/pen/LYNYmpb | https://youtu.be/6xEQ_jA5V2Y  |
 | day-14 | Digital Clock | https://codepen.io/Web_Cifar/pen/MWyYaBP | https://youtu.be/gmNhRyxAPpw  |
-| day-15 | BG Color Changer | https://codepen.io/Web_Cifar/pen/dyMPmwY | Coming Soon 🔜  |
+| day-15 | BG Color Changer | https://codepen.io/Web_Cifar/pen/dyMPmwY | https://youtu.be/Yem8T8azZko  |
+| day-16 | Basic Tooltips | https://codepen.io/Web_Cifar/pen/PoNqwNJ | Coming Soon 🔜  |
