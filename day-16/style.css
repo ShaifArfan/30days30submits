@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+html{
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+
+section{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.demo-1,
+.demo-2,
+.demo-3{
+  background-color: white;
+  padding: 30px;
+  margin: 80px 0;
+  box-shadow: 0px 0px 20px #00000010;
+  border-radius: 8px;
+}
+.tooltip{
+  position: relative;
+}
+.tooltip::after,
+.tooltip::before{
+  content: '';
+  position: absolute;
+  background-color: black;
+  height: auto;
+  width:auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: .2s ease-in-out transform;
+}
+
+.tooltip::before{
+  font-size: 14px;
+  line-height: 20px;
+  content: attr(data-tooltip);
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  top: -10px;
+  transform: translate(-50%, -100%)scale(0);
+  transform-origin: bottom;
+}
+.tooltip::after{
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -150%) rotate(45deg)scale(0);
+  transform-origin: top center;
+}
+.tooltip:hover::before{
+  transform: translate(-50%, -100%) scale(1);
+}
+.tooltip:hover::after{
+  transform: translate(-50%, -150%) rotate(45deg)scale(1);
+}
+.icon{
+ display: inline-block;
+ color: rgb(62, 86, 221);
+}
+.icon ion-icon{
+  margin-bottom: -5px;
+}

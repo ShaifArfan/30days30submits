@@ -1,6 +1,7 @@
 const button = document.querySelector('button');
 const h2El = document.querySelector('h2');
 const bgEl = document.querySelector('section');
+// const hexColorEl = [1,2,3,4,5,6,7,8,9,'A','B','c','D','E','F'];
 
 button.addEventListener('click', () => {
   let color = '#';
