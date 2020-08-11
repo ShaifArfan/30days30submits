@@ -9,19 +9,17 @@ html{
   font-family: 'Montserrat';
 }
 body{
-  overflow: hidden;
-}
-img{
-  height: 100%;
+  background-color: azure;
   width: 100%;
 }
+
 section{
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 .container{
   width: 90%;
@@ -29,34 +27,41 @@ section{
   margin: 0 auto;
   position: relative;
 }
-.tooltip{
+.container img{
+  height: 100%;
+  width: 100%;
+}
+.all-tooltip{
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 0%;
-  left: 0%;
+  left: 0;
+  top: 0;
 }
+
 .tooltip-content{
   position: absolute;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 20px #00000020;
+  box-shadow: 0px 0px 20px #00000020;
   padding: 30px;
   border-radius:8px;
-  width: 300px;
+  width: 90vw;
+  max-width: 300px;
   opacity: 0;
   pointer-events: none;
-  left: -50%;
+  /* left: -50%; */
+  z-index: 2;
 }
 .tooltip-content .arrow{
   position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: rgb(255, 255, 255);
-  top: -12.5px;
+  width: 10px;
+  height: 10px;
+  border: 10px solid transparent;
+  border-bottom-color: rgb(255, 255, 255);
+  top: 0px;
   left: 50%;
-  transform:translateX(-50%) rotate(45deg) scale(.7);
+  transform:translate(-50%, -100%) rotate(0deg);
 }
-/* .pin::before, */
 .pin{
   position: absolute;
   content: '';
@@ -77,17 +82,110 @@ section{
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  animation: grow-effect 1s ease infinite;
+  animation: puls-effect 1s ease infinite;
 }
 .tooltip.active .tooltip-content{
   opacity: 1;
   pointer-events: all;
+  display: block;
 }
-/* .pin::after{
-  transform: translate(-50%,-50%);
-  animation: grow-effect 1s ease infinite;
-} */
-@keyframes grow-effect{
+
+/* Custom Style for tooltip-1 */
+
+.tooltip-1 .pin{
+  top: 40%;
+  left: 82%;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+}
+.tooltip-1 .tooltip-content{
+  display: flex;
+  max-width: 500px;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0;
+  background-color: aliceblue;
+}
+.tooltip-1.active .tooltip-content{
+  display: flex;
+}
+.tooltip-1 .tooltip-content .img{
+object-fit: cover;
+}
+.tooltip-1 .tooltip-content .content{
+padding: 20px;
+}
+.tooltip-1 .tooltip-content .content h1{
+  font-size: 24px;
+}
+.tooltip-1 .tooltip-content .content p{
+  font-size: 14px;
+}
+.tooltip-1 .tooltip-content .content button{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px #00000020;
+}
+
+/* custom style for tooltip-2 */
+
+.tooltip-2 .pin{
+  top: 80%;
+  left: 35%;
+  height: 15px;
+  width: 15px;
+}
+.tooltip-2 .tooltip-content .content h1{
+  margin: 20px 0;
+}
+.tooltip-2 .tooltip-content{
+  background-color: aliceblue;
+}
+.tooltip-2 .tooltip-content button{
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px #00000020;
+}
+
+/* Custom style for tooltip-3 */
+
+.tooltip-3 .pin{
+  top: 20%;
+  left: 5%;
+  height: 15px;
+  width: 15px;
+}
+/* Custom style for tooltip-4 */
+
+.tooltip-4 .pin{
+  top: 80%;
+  left: 5%;
+  height: 15px;
+  width: 15px;
+}
+
+/* Puls Effect For Pins */
+
+@keyframes puls-effect{
   0%{
     transform: scale(1);
     opacity: 1;
@@ -95,5 +193,14 @@ section{
   100%{
     transform: scale(3);
     opacity: 0;
+  }
+}
+
+/* Media Query */
+
+@media (max-width: 768px){
+  .tooltip-1 .tooltip-content{
+    flex-direction: column;
+    max-width: 300px;
   }
 }
