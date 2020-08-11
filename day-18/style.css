@@ -111,10 +111,12 @@ section{
   display: flex;
 }
 .tooltip-1 .tooltip-content .img{
+  width: 50%;
 object-fit: cover;
 }
 .tooltip-1 .tooltip-content .content{
-padding: 20px;
+  width: 50%;
+  padding: 20px;
 }
 .tooltip-1 .tooltip-content .content h1{
   font-size: 24px;
@@ -202,5 +204,9 @@ padding: 20px;
   .tooltip-1 .tooltip-content{
     flex-direction: column;
     max-width: 300px;
+  }
+  .tooltip-1 .tooltip-content .content,
+  .tooltip-1 .tooltip-content .img{
+    width: 100%;
   }
 }
