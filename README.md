@@ -21,4 +21,5 @@
 | day-14 | Digital Clock | https://codepen.io/Web_Cifar/pen/MWyYaBP | https://youtu.be/gmNhRyxAPpw  |
 | day-15 | BG Color Changer | https://codepen.io/Web_Cifar/pen/dyMPmwY | https://youtu.be/Yem8T8azZko  |
 | day-16 | Basic Tooltips | https://codepen.io/Web_Cifar/pen/PoNqwNJ | https://youtu.be/MXRxahbJX3A  |
-| day-17 | Scroll Down Button | https://codepen.io/Web_Cifar/pen/WNwvOaE | Coming Soon 🔜  |
+| day-17 | Scroll Down Button | https://codepen.io/Web_Cifar/pen/WNwvOaE | https://youtu.be/LY1jeQGUiAI |
+| day-18 | Advance Tooltips | https://codepen.io/Web_Cifar/pen/yLOYoPR | Coming Soon 🔜  |
