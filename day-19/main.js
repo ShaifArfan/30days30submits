@@ -10,11 +10,12 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function success() {
     form.reset();
-    // button.style = "display: none ";
+    status.classList.add('success');
     status.innerHTML = "Thanks!";
   }
 
   function error() {
+    status.classList.add('error');
     status.innerHTML = "Oops! There was a problem.";
   }
 
