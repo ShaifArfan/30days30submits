@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Functional Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <form action="https://formspree.io/maypkaja" id="test-form" method="POST">
+
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName">
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="Email">
+        </div>
+
+        <div class="form-group">
+          <label for="massage">Massage</label>
+          <textarea name="massage" id="massage" rows="10" maxlength="200"></textarea>
+        </div>
+
+        <button type="submit" id="test-form-submit">Submit</button>
+      </form>
+    </div>
+    <h1 id="status"></h1>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -10,21 +10,21 @@ function contentPosition(){
     const pin = tooltip.querySelector('.pin');
     const content = tooltip.querySelector('.tooltip-content')
     const arrow = tooltip.querySelector('.arrow');
-    const pinLeft = pin.offsetLeft;
-    if (pinLeft + content.offsetWidth / 2 > fullDiv.offsetWidth) {
-      const extraLeft = fullDiv.offsetWidth - (pinLeft + content.offsetWidth / 2);
+    // const pinLeft = pin.offsetLeft;
+    if (pin.offsetLeft + content.offsetWidth / 2 > fullDiv.offsetWidth) {
+      const extraLeft = fullDiv.offsetWidth - (pin.offsetLeft + content.offsetWidth / 2);
       // console.log('right-conflict', tooltip)
-      content.style.left = pinLeft - content.offsetWidth / 2 + extraLeft - 30+ 'px';
+      content.style.left = pin.offsetLeft - content.offsetWidth / 2 + extraLeft - 30+ 'px';
       content.style.top = pin.offsetTop + 30 + 'px';
     } else if (pin.offsetLeft + container.offsetLeft < content.offsetWidth / 2 ){
       // console.log('left conflict', pin.offsetLeft)
       content.style.left = - container.offsetLeft +'px';
       content.style.top = pin.offsetTop + 30 + 'px';
     } else {
-      content.style.left = pinLeft - content.offsetWidth / 2 + 'px';
+      content.style.left = pin.offsetLeft - content.offsetWidth / 2 + 'px';
       content.style.top = pin.offsetTop + 30 + 'px';
     }
-    arrow.style.left = pinLeft - content.offsetLeft + pin.offsetWidth/2 + 'px';
+    arrow.style.left = pin.offsetLeft - content.offsetLeft + pin.offsetWidth/2 + 'px';
   })
 }
 tooltips.forEach(tooltip => {
