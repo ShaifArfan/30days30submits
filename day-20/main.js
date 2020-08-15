@@ -23,6 +23,11 @@ form.addEventListener('submit', (e) => {
   });
   console.log(inputs)
   form.reset();
+  let index = 0;
+  const active = document.querySelector('.active');
+  index = steps.indexOf(active);
+  steps[index].classList.remove('active');
+  steps[0].classList.add('active');
 })
 
 
