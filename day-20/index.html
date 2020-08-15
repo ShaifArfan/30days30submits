@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Step Forms</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+      <form>
+
+        <div class="step step-1 active">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="first-name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="last-name">
+          </div>
+          <div class="form-group">
+            <label for="nickName">Nick Name</label>
+            <input type="text" id="nickName" name="nick-name">
+          </div>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step step-2">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="number" id="phone" name="phone-number">
+          </div>
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+
+        <div class="step step-3">
+          <div class="form-group"> 
+            <label for="country">country</label>
+            <input type="text" id="country" name="country">
+          </div>
+          <div class="form-group"> 
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+          </div>
+          <div class="form-group"> 
+            <label for="postCode">Post Code</label>
+            <input type="text" id="postCode" name="post-code">
+          </div>
+          <button type="button" class="previous-btn">Prev</button>
+          <button type="submit" class="submit-btn">Submit</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+</html>
