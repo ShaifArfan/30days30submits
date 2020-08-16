@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat';
+}
+section{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.container{
+  padding: 20px 40px;
+  border: 2px solid black;
+  letter-spacing: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.container::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+  animation: loader_bg 3s linear infinite alternate;
+}
+@keyframes loader_bg {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
