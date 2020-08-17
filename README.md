@@ -25,4 +25,5 @@
 | day-18 | Advance Tooltips | https://codepen.io/Web_Cifar/pen/yLOYoPR | https://youtu.be/e_jEquJo7y8 |
 | day-19 | Full Functional Html Form | https://codepen.io/Web_Cifar/pen/gOrrPpO | https://youtu.be/vc9rgFHr098  |
 | day-20 | Multi Step Form | https://codepen.io/Web_Cifar/pen/PoNNEYY | https://youtu.be/cKTgIDkRsGc  |
-| day-20 | CSS Loading animation | https://codepen.io/Web_Cifar/pen/jOqqRPM | Coming Soon 🔜  |
+| day-21 | CSS Loading animation | https://codepen.io/Web_Cifar/pen/jOqqRPM | https://youtu.be/E_jOrp4t0N4  |
+| day-22 | Food Recipe App | https://codepen.io/Web_Cifar/pen/oNxLYRY | Coming Soon 🔜  |
