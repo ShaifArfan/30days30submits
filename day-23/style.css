@@ -19,7 +19,7 @@ section{
   background-color: #09111b;
 }
 .container h1{
-  font-size: 100px;
+  font-size: 20vw;
   color: var(--var-color);
   position: relative;
 }
