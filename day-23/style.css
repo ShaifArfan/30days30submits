@@ -8,7 +8,7 @@ html{
   font-family: 'Nunito'
 }
 :root{
-  --var-color: rgb(0, 238, 255); 
+  --var-color: rgb(255, 255, 255); 
 }
 section{
   height: 100vh;
