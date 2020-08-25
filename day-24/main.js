@@ -8,13 +8,13 @@ recognition.interimResults = true;
 let p = document.createElement('p');
 
 recognition.addEventListener('result', (e)=>{
+  texts.appendChild(p);
   const text = Array.from(e.results)
     .map(result => result[0])
     .map(result => result.transcript)
     .join('');
 
   p.innerText = text;
-  texts.appendChild(p);
   if(e.results[0].isFinal){
     if (text.includes('how are you')) {
       p = document.createElement('p');
