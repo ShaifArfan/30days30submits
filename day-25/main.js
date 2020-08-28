@@ -2,6 +2,7 @@ const slides = Array.from(document.querySelectorAll('.slide'));
 const slider = document.querySelectorAll('.slider');
 const buttons = document.querySelectorAll('.buttons div');
 const dots = document.querySelector('.dots');
+let timeoutId ;
 
 function getNextPrev() {
   const activeSlide = document.querySelector('.slide.active');
@@ -43,6 +44,7 @@ buttons.forEach(button => {
   })
 })
 function getNextSlide(){
+  clearInterval(timeoutId);
   const current = document.querySelector('.slide.active');
   const [next, prev] = getNextPrev();
   if(current.classList.contains('top')) {
@@ -56,8 +58,10 @@ function getNextSlide(){
   next.classList.add('active');
   getPosition();
   getActiveDot();
+  autoLoop();
 }
 function getPrevSlide(){
+  clearInterval(timeoutId);
   const current = document.querySelector('.active');
   const [next, prev] = getNextPrev();
   current.classList.add('top');
@@ -68,6 +72,7 @@ function getPrevSlide(){
   prev.classList.add('active');
   getPosition();
   getActiveDot();
+  autoLoop();
 }
 getPosition();
 
@@ -105,3 +110,10 @@ function getDotSlide(index){
   getPosition();
   getActiveDot();
 }
+
+function autoLoop() {
+  timeoutId = setTimeout(() => {
+    getNextSlide();
+  },5000)
+}
+autoLoop();

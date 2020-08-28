@@ -136,4 +136,8 @@ section{
   .slide-1 .content{
     left: 20px;
   }
+  .dots{
+    left: 0;
+    transform: translateX(0);
+  }
 }
