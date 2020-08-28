@@ -102,6 +102,7 @@ function functionalDots(){
   })
 }
 function getDotSlide(index){
+  clearTimeout(timeoutId);
   slides.forEach(slide => {
     slide.classList.remove('active');
   })
@@ -109,6 +110,7 @@ function getDotSlide(index){
   current.classList.add('active')
   getPosition();
   getActiveDot();
+  autoLoop();
 }
 
 function autoLoop() {
