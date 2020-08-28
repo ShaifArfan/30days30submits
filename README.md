@@ -28,4 +28,5 @@
 | day-21 | CSS Loading animation | https://codepen.io/Web_Cifar/pen/jOqqRPM | https://youtu.be/E_jOrp4t0N4  |
 | day-22 | Food Recipe App | https://codepen.io/Web_Cifar/pen/oNxLYRY | https://youtu.be/x8EY0BlhPGk  |
 | day-23 | Neon Light Effect | https://codepen.io/Web_Cifar/pen/MWyJENV | https://youtu.be/NLtUycloTnc  |
-| day-24 | Speech Recognition App | https://codepen.io/Web_Cifar/pen/jOqBEjE | Coming Soon 🔜  |
+| day-24 | Speech Recognition App | https://codepen.io/Web_Cifar/pen/jOqBEjE | https://youtu.be/-k-PgvbktX4  |
+| day-25 | Custom Slider | https://codepen.io/Web_Cifar/pen/bGpRwEr | Coming Soon 🔜  |
