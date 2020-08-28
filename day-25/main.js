@@ -1,6 +1,7 @@
 const slides = Array.from(document.querySelectorAll('.slide'));
 const slider = document.querySelectorAll('.slider');
 const buttons = document.querySelectorAll('.buttons div');
+const dots = document.querySelector('.dots');
 
 function getNextPrev() {
   const activeSlide = document.querySelector('.slide.active');
@@ -54,6 +55,7 @@ function getNextSlide(){
   next.style.transform = 'translateX(0)';
   next.classList.add('active');
   getPosition();
+  getActiveDot();
 }
 function getPrevSlide(){
   const current = document.querySelector('.active');
@@ -65,5 +67,41 @@ function getPrevSlide(){
   prev.style.transform = 'translateX(0)';
   prev.classList.add('active');
   getPosition();
+  getActiveDot();
 }
 getPosition();
+
+// dots
+slides.forEach(slide => {
+  const dot = document.createElement('div');
+  dot.classList.add('dot');
+  dots.appendChild(dot)
+  functionalDots();
+});
+getActiveDot();
+function getActiveDot(){
+  const allDots = document.querySelectorAll('.dots .dot');
+  allDots.forEach(dot => {
+    dot.classList.remove('active');
+  })
+  const activeSlide = document.querySelector('.slide.active');
+  const activeIndex = slides.indexOf(activeSlide);
+  allDots[activeIndex].classList.add('active');
+}
+function functionalDots(){
+  const allDots = document.querySelectorAll('.dots .dot');
+  allDots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      getDotSlide(index);
+    })
+  })
+}
+function getDotSlide(index){
+  slides.forEach(slide => {
+    slide.classList.remove('active');
+  })
+  const current = slides[index];
+  current.classList.add('active')
+  getPosition();
+  getActiveDot();
+}

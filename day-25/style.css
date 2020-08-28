@@ -60,21 +60,7 @@ section{
 .slide-4{
   background-image: url(./img/img-4.jpg);
 }
-/* .buttons{
-  z-index: 5;
-  position: absolute;
-  padding: 30px;
-  height: 100%;
-  width:100%;
-  top: 0;
-  font-size: 50px;
-  color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-  pointer-events: none;
-} */
+/* buttons */
 .buttons div{
   cursor: pointer;
   pointer-events: all;
@@ -84,7 +70,6 @@ section{
 .buttons div:hover{
   background-color: gray;
 }
-
 .buttons{
   position: absolute;
   z-index: 5;
@@ -97,6 +82,29 @@ section{
   width: auto;
   font-size: 50px;
 }
+/* Dots */
+.dots{
+  z-index: 5;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dots .dot{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 10px;
+  margin: 10px;
+  transition: .3s ease width;
+  cursor: pointer;
+}
+.dots .dot.active{
+  background-color: white;
+  width: 40px;
+}
+/* custom style */
 .slide-1{
   flex-direction: column;
   text-align: left;
