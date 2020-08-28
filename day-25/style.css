@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+section{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.slider{
+  width: 100%;
+  height: 100%;
+}
+.slide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+}
+.slide::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.685);
+  z-index: -1;
+}
+.top{
+  z-index: 3;
+  transition: .5s ease transform;
+}
+.slide.active{
+  z-index: 3;
+}
+.slide.transition{
+  transition: .5s ease transform;
+}
+.slide-1{
+  background-image: url(./img/img-1.jpg);
+}
+.slide-2{
+  background-image: url(./img/img-2.jpg);
+}
+.slide-3{
+  background-image: url(./img/img-3.jpg);
+}
+.slide-4{
+  background-image: url(./img/img-4.jpg);
+}
+/* .buttons{
+  z-index: 5;
+  position: absolute;
+  padding: 30px;
+  height: 100%;
+  width:100%;
+  top: 0;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  pointer-events: none;
+} */
+.buttons div{
+  cursor: pointer;
+  pointer-events: all;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.582);
+}
+.buttons div:hover{
+  background-color: gray;
+}
+
+.buttons{
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  width: auto;
+  font-size: 50px;
+}
+.slide-1{
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+.slide-1 .content{
+  width: 90%;
+  max-width: 500px;
+  position: absolute;
+  left: 20%;
+}
+.slide-1 h1{
+  font-size: 50px;
+}
+.slide-1 p{
+  font-size: 18px;
+  margin-top: 20px;
+}
+.slide-1 button{
+  display: inline-block;
+  padding: 15px 50px;
+  font-size: 24px;
+  outline: none;
+  border: none;
+  background-color: white;
+  margin-top: 20px;
+}
+@media (max-width: 768px){
+  .slide-1 .content{
+    left: 20px;
+  }
+}
