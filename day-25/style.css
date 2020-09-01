@@ -40,13 +40,11 @@ section{
 }
 .top{
   z-index: 3;
-  transition: .5s ease transform;
+  transition: .3s ease transform;
 }
 .slide.active{
+  transform: translateX(0);
   z-index: 3;
-}
-.slide.transition{
-  transition: .5s ease transform;
 }
 .slide-1{
   background-image: url(./img/img-1.jpg);

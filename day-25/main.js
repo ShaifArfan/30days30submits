@@ -31,6 +31,8 @@ function getPosition() {
       slide.style.transform = 'translateX(-100%)';
     }else if(slide === next){
       slide.style.transform = 'translateX(100%)';
+    }else{
+      slide.style.transform = 'translateX(100%)'
     }
     next.addEventListener('transitionend', ()=>{
       slide.classList.remove('top');
@@ -81,9 +83,7 @@ slides.forEach(slide => {
   const dot = document.createElement('div');
   dot.classList.add('dot');
   dots.appendChild(dot)
-  functionalDots();
 });
-getActiveDot();
 function getActiveDot(){
   const allDots = document.querySelectorAll('.dots .dot');
   allDots.forEach(dot => {
@@ -118,4 +118,6 @@ function autoLoop() {
     getNextSlide();
   },5000)
 }
+getActiveDot();
+functionalDots();
 autoLoop();
