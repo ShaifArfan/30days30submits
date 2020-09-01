@@ -1,7 +1,7 @@
 const slides = Array.from(document.querySelectorAll('.slide'));
 const slider = document.querySelectorAll('.slider');
 const buttons = document.querySelectorAll('.buttons div');
-const dots = document.querySelector('.dots');
+const dotsEl = document.querySelector('.dots');
 let timeoutId ;
 
 function getNextPrev() {
@@ -34,7 +34,7 @@ function getPosition() {
     }else{
       slide.style.transform = 'translateX(100%)'
     }
-    next.addEventListener('transitionend', ()=>{
+    slide.addEventListener('transitionend', ()=>{
       slide.classList.remove('top');
     })
   });
@@ -82,7 +82,7 @@ getPosition();
 slides.forEach(slide => {
   const dot = document.createElement('div');
   dot.classList.add('dot');
-  dots.appendChild(dot)
+  dotsEl.appendChild(dot)
 });
 function getActiveDot(){
   const allDots = document.querySelectorAll('.dots .dot');
