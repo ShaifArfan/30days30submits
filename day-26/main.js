@@ -4,8 +4,9 @@ const FPS = 60;
 section.style.height = window.innerHeight+'px';
 section.style.width = window.innerWidth+'px';
 
-let xPosition = 100;
-let yPosition = 100;
+// Logo moving velocity Variables 
+let xPosition = 10;
+let yPosition = 10;
 let xSpeed = 4;
 let ySpeed = 4;
 function update(){
@@ -22,6 +23,7 @@ setInterval( () => {
     ySpeed = -ySpeed;
     logo.style.fill = randomColor();
   }
+
   xPosition += xSpeed;
   yPosition += ySpeed;
   update();
@@ -36,6 +38,10 @@ function randomColor(){
 console.log(randomColor())
 
 window.addEventListener('resize', ()=> {
-  location.reload();
+  xPosition = 10;
+  yPosition = 10;
+
+  section.style.height = window.innerHeight+'px';
+  section.style.width = window.innerWidth+'px';
 })
 
