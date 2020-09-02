@@ -29,4 +29,5 @@
 | day-22 | Food Recipe App | https://codepen.io/Web_Cifar/pen/oNxLYRY | https://youtu.be/x8EY0BlhPGk  |
 | day-23 | Neon Light Effect | https://codepen.io/Web_Cifar/pen/MWyJENV | https://youtu.be/NLtUycloTnc  |
 | day-24 | Speech Recognition App | https://codepen.io/Web_Cifar/pen/jOqBEjE | https://youtu.be/-k-PgvbktX4  |
-| day-25 | Custom Slider | https://codepen.io/Web_Cifar/pen/bGpRwEr | Coming Soon 🔜  |
+| day-25 | Custom Slider | https://codepen.io/Web_Cifar/pen/bGpRwEr | https://youtu.be/V9TCxMMpGhI  |
+| day-26 | Bouncing DVD logo | https://codepen.io/Web_Cifar/pen/JjXrLRJ | Coming Soon 🔜  |
