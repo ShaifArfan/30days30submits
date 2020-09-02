@@ -9,8 +9,8 @@ let yPosition = 100;
 let xSpeed = 4;
 let ySpeed = 4;
 function update(){
-  logo.style.left = xPosition;
-  logo.style.top = yPosition;
+  logo.style.left = xPosition+ 'px';
+  logo.style.top = yPosition+ 'px';
 }
 
 setInterval( () => {
@@ -29,7 +29,7 @@ setInterval( () => {
 },1000/FPS)
 function randomColor(){
   let color = '#';
-  color += Math.random().toString(16).slice(2,8).toUpperCase();
+  color += Math.random().toString(16).slice(2, 8).toUpperCase();
 
   return color;
 }
