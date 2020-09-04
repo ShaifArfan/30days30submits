@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+section{
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(25, 25, 26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  background-color: rgb(40, 40, 44);
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  color: aliceblue;
+}
+form h1{
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+form .option{
+  font-size: 1.2rem;
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  transition: .3s ease background-color;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+}
+form .option label{
+  width: 100%;
+  margin-left: 10px ;
+  cursor: pointer;
+  justify-self: stretch;
+}
+form .option:hover{
+  background-color: rgb(23, 23, 24);
+}
+form .option.correct{
+  background-color: green;
+}
+form button{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-family: 'Montserrat';
+  background-color: rgb(98, 100, 105);
+  border: none;
+  outline: none;
+  color: rgb(20, 20, 20);
+  cursor: pointer;
+  transition: .3s ease background-color;
+}
+button:hover{
+  background-color: rgb(145, 148, 155);
+}
+.finish-btn, .next-btn{
+  width: 50%;
+  display: inline-block;
+}
+.finish-btn{
+  border-right: 1px solid black;
+}
+.next-btn{
+  border-left: 1px solid black;
+}
