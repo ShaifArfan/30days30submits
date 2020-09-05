@@ -26,7 +26,7 @@
     answer = data[0].correct_answer;
     data[0].incorrect_answers.map(item => options.push(item));
     options.splice(Math.floor(Math.random() * options.length + 1), 0, answer)
-    console.log(answer)
+    // console.log(answer)
     generateTemplate(question, options, answer);
   }
 
@@ -45,7 +45,7 @@
   async function fetchQuiz() {
     const response = await fetch(baseURL);
     const data = await response.json();
-    console.log(data.results)
+    // console.log(data.results)
     return data.results;
   }
 
@@ -65,7 +65,7 @@
   }
 
   function checkQuiz(selected) {
-    console.log(selected, answer)
+    // console.log(selected, answer)
     answeredQus++;
     if (selected === answer) {
       score++;
@@ -73,7 +73,7 @@
       form.quiz.forEach(input => {
         if (input.value === answer) {
           input.parentElement.classList.add('correct')
-          console.log(input)
+          // console.log(input)
         }
       })
     } else {
@@ -81,7 +81,7 @@
       form.quiz.forEach(input => {
         if (input.value === answer) {
           input.parentElement.classList.add('correct')
-          console.log(input)
+          // console.log(input)
         }
       })
     }
