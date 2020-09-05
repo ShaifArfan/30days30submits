@@ -60,6 +60,9 @@ form .option label{
 form .option:hover{
   background-color: rgb(23, 23, 24);
 }
+form .option input[type="radio"]:checked + label{
+  color: rgb(0, 238, 255);
+}
 form .option.correct{
   background-color: green;
 }
