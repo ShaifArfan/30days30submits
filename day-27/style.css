@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 html{
-  font-family: 'Montserrat';
+  font-family: 'Nunito', sans-serif;
   font-size: 20px;
 }
 
@@ -21,7 +22,8 @@ section{
   background-color: rgb(40, 40, 44);
   padding: 50px 30px 30px 30px;
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
+  min-height: 500px;
   border-radius: 8px;
   color: aliceblue;
   position: relative;
@@ -105,4 +107,25 @@ button:hover,
 }
 .container .result-overlay .final-result{
   font-size: 5rem;
+}
+.container .placeholder{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(./placeholder.svg);
+  background-color: rgb(40, 40, 44);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px){
+  html{
+    font-size: 17px;
+  }
+  .container form h1{
+    font-size: 1.5rem;
+  } 
 }
