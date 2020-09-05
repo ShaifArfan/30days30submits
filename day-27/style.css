@@ -19,11 +19,18 @@ section{
 
 .container{
   background-color: rgb(40, 40, 44);
-  padding: 30px;
+  padding: 50px 30px 30px 30px;
   width: 90%;
   max-width: 500px;
   border-radius: 8px;
   color: aliceblue;
+  position: relative;
+  overflow: hidden;
+}
+.container .scoreBoard{
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 form h1{
   font-size: 1.4rem;
@@ -54,7 +61,8 @@ form .option:hover{
 form .option.correct{
   background-color: green;
 }
-form button{
+form button,
+.container .result-overlay button{
   width: 100%;
   margin-top: 20px;
   padding: 10px;
@@ -67,7 +75,8 @@ form button{
   cursor: pointer;
   transition: .3s ease background-color;
 }
-button:hover{
+button:hover,
+.container .result-overlay button:hover{
   background-color: rgb(145, 148, 155);
 }
 .finish-btn, .next-btn{
@@ -79,4 +88,21 @@ button:hover{
 }
 .next-btn{
   border-left: 1px solid black;
+}
+
+.container .result-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(40, 40, 44);
+  text-align: center;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .result-overlay .final-result{
+  font-size: 5rem;
 }

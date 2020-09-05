@@ -1,17 +1,23 @@
 const baseURL = 'https://opentdb.com/api.php?amount=1';
+const containerEl = document.querySelector('.container');
 const form = document.querySelector('#quiz_form');
 const qusEl = document.querySelector('.qus');
 const optionsEl = document.querySelector('.all_options');
 const buttonsEl = document.querySelector('.buttons');
+const scoreEl = document.querySelector('.scoreBoard .score-num');/*  */
+const answeredEl = document.querySelector('.scoreBoard .answered-num');/*  */
 
 let question, answer;
 let options =[];
+let score = 0;
+let answeredQus = 0;
 
 window.addEventListener('DOMContentLoaded', () => {
   quizApp();
 })
 
 async function quizApp(){
+  updateScoreBoard();
   const data = await fetchQuiz();
   question = data[0].question;
   options = [];
@@ -55,7 +61,10 @@ function generateTemplate(question, options, answer){
 
 function checkQuiz(selected){
   console.log(selected, answer)
+  answeredQus++;
   if(selected === answer){
+    score++;
+    updateScoreBoard();
     form.quiz.forEach(input => {
       if (input.value === answer){
         input.parentElement.classList.add('correct')
@@ -63,6 +72,7 @@ function checkQuiz(selected){
       }
     })
   }else{
+    updateScoreBoard();
     form.quiz.forEach(input => {
       if (input.value === answer) {
         input.parentElement.classList.add('correct')
@@ -75,15 +85,18 @@ function checkQuiz(selected){
 function generateButtons(){
   const finishBtn = document.createElement('button');
   finishBtn.innerText = 'Finish';
+  finishBtn.setAttribute('type', 'button')
   finishBtn.classList.add('finish-btn')
   buttonsEl.appendChild(finishBtn)
 
   const nextBtn = document.createElement('button');
   nextBtn.innerText = 'Next Qus';
+  nextBtn.setAttribute('type', 'button')
   nextBtn.classList.add('next-btn')
   buttonsEl.appendChild(nextBtn)
 
   nextBtn.addEventListener('click', getNextQuiz);
+  finishBtn.addEventListener('click', finishQuiz);
 }
 
 function getNextQuiz(){
@@ -96,4 +109,41 @@ function getNextQuiz(){
   buttonsEl.querySelector('button[type="submit"]').style.display = 'block';
   quizApp();
 
+}
+
+function finishQuiz(){
+
+  const nextBtn = document.querySelector('.next-btn');
+  const finishBtn = document.querySelector('.finish-btn');
+
+  buttonsEl.removeChild(nextBtn);
+  buttonsEl.removeChild(finishBtn);
+
+  buttonsEl.querySelector('button[type="submit"]').style.display = 'block';
+
+  const overlay = document.createElement('div');
+  overlay.classList.add('result-overlay');
+  overlay.innerHTML = `
+    <div class="final-result">${score}/${answeredQus}</div>
+    <button>Play Again</button>
+  `
+  containerEl.appendChild(overlay);
+  document.querySelector('.result-overlay button')
+    .addEventListener('click', ()=>{
+      containerEl.removeChild(overlay);
+      playAgain();
+    })
+  console.log(score)
+}
+
+function updateScoreBoard(){
+  scoreEl.innerText = score;
+  answeredEl.innerText = answeredQus;
+}
+
+function playAgain(){
+  score = 0 ;
+  answeredQus = 0;
+
+  quizApp();
 }
