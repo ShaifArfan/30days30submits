@@ -10,7 +10,7 @@ html{
 }
 
 section{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: rgb(25, 25, 26);
   display: flex;
@@ -114,7 +114,7 @@ button:hover,
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(./placeholder.svg);
+  background-image: url(./placeholder.png);
   background-color: rgb(40, 40, 44);
   background-position: center;
   background-size: 90%;
