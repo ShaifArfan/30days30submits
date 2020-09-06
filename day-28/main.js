@@ -99,25 +99,40 @@ window.addEventListener('keydown', (e)=>{
     e.key === '7' ||
     e.key === '8' ||
     e.key === '9' ||
-    e.key === '+' ||
-    e.key === '=' ||
-    e.key === '-' ||
-    e.key === '/' ||
-    e.key === '%' ||
     e.key === '.' 
   ){
-    clickEl(e.key)
-    console.log(e.key)
-  }else if(e.key === '*'){
-    clickEl('x')
-    console.log(e.key)
+    clickButtonEl(e.key)
+    // console.log(e.key)
+  }else if(
+    e.key === '+' ||
+    e.key === '-' ||
+    e.key === '/' ||
+    e.key === '%' 
+  ){
+    clickOperation(e.key);
   }
-
+  else if(e.key === '*'){
+    clickOperation('x')
+    // console.log(e.key)
+  } else if( e.key == "Enter" || e.key === '='){
+    clickEqual();
+  }
+  // console.log(e.key)
 })
-function clickEl(key) {
+function clickButtonEl(key) {
   numbersEl.forEach(button => {
     if (button.innerText === key) {
       button.click();
     }
   })
+}
+function clickOperation(key){
+  operationEl.forEach( operation => {
+    if(operation.innerText === key){
+      operation.click()
+    }
+  })
+}
+function clickEqual(){
+  equalEl.click();
 }

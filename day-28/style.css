@@ -7,6 +7,7 @@ html{
   font-family: 'Montserrat', sans-serif;
 }
 section{
+  background-color: rgb(18, 26, 31);
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -16,10 +17,12 @@ section{
 .container{
   width: 90%;
   max-width: 400px;
-  background-color: aquamarine;
+  background-color: rgb(39, 55, 59);
+  border-radius: 8px;
+  overflow: hidden;
 }
 .display{
-  background-color: antiquewhite;
+  background-color: rgb(182, 182, 182);
   height: 100px;
   width: 100%;
   text-align: right;
@@ -30,6 +33,8 @@ section{
 .display-1{
   opacity: .4;
   font-size: 20px;
+  height: 20px;
+  overflow: hidden;
 }
 .temp-result{
   position: absolute;
@@ -39,10 +44,12 @@ section{
   opacity: .3;
 }
 .all_button{
+  color: whitesmoke;
   display: grid;
   grid-template:repeat(4, 1fr) / repeat(4, 1fr) ;
 }
 .button{
+  border: .5px solid rgba(92, 92, 92, 0.137);
   display: inline-block;
   height: 80px;
   width: 100%;
@@ -53,7 +60,7 @@ section{
   cursor: pointer;
 }
 .button:hover{
-  background-color: azure;
+  background-color: rgb(30, 43, 46);
 }
 .btn-0{
   grid-column: 1/3;
