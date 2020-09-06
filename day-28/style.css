@@ -51,7 +51,7 @@ section{
 .button{
   border: .5px solid rgba(92, 92, 92, 0.137);
   display: inline-block;
-  height: 80px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
