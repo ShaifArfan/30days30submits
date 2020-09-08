@@ -15,7 +15,7 @@ async function weatherApp(location){
   
 }
 async function fetchWeather(location){
-  const baseURL = `http://api.weatherstack.com/current?access_key=${key}&query=${location}`;
+  const baseURL = `https://cors-anywhere.herokuapp.com/http://api.weatherstack.com/current?access_key=${key}&query=${location}`;
   const res = await fetch(baseURL);
   const data = await res.json();
   console.log(data);
