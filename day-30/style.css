@@ -1,22 +1,22 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-section{
+section {
   min-height: 100vh;
   width: 100%;
   background-color: rgb(22, 22, 22);
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
-.container{
+.container {
   margin: 0 50px;
   width: fit-content;
   height: auto;
 }
-.container .dot{
+.container .dot {
   height: 12px;
   width: 12px;
   background-color: whitesmoke;
@@ -24,43 +24,43 @@ section{
   margin: 0 5px;
   border-radius: 50px;
 }
-.container:nth-child(1) .dot{
-  animation: dotLoaders .8s linear infinite forwards;
+.container:nth-child(1) .dot {
+  animation: dotLoaders 0.9s linear infinite forwards;
 }
-.container:nth-child(2) .dot{
+.container:nth-child(2) .dot {
   animation: dotLoaders2 1.5s linear infinite forwards;
 }
-.container .dot.dot-1{
-  animation-delay: .25s;
+.container .dot.dot-1 {
+  animation-delay: 0.25s;
 }
-.container .dot.dot-2{
-  animation-delay: .5s;
+.container .dot.dot-2 {
+  animation-delay: 0.5s;
 }
-.container .dot.dot-3{
-  animation-delay: .75s;
+.container .dot.dot-3 {
+  animation-delay: 0.75s;
 }
 @keyframes dotLoaders {
-  0%{
-      transform: translateY(0px);
+  0% {
+    transform: translateY(0px);
   }
-  50%{
-  transform: translateY(-20px);
+  50% {
+    transform: translateY(-20px);
   }
-  100%{
-  transform: translateY(0px);
+  100% {
+    transform: translateY(0px);
   }
 }
-@keyframes dotLoaders2{
-  0%{
+@keyframes dotLoaders2 {
+  0% {
     background-color: rgba(255, 255, 255, 0.137);
-    transform: scale(1);
+    transform: scale(0.8);
   }
-  50%{
+  50% {
     background-color: rgb(255, 255, 255);
     transform: scale(1.5);
   }
-  100%{
+  100% {
     background-color: rgba(255, 255, 255, 0.137);
-    transform: scale(1);
+    transform: scale(0.8);
   }
 }
