@@ -1,7 +1,9 @@
+<img src="./banner.png">
+
 # 30days30submits
 
- ## Today is July 21, 2020 📅
- ### From this day I am gonna make 30 submits in the next 30 days continuously. Those 'submits' will be related to web design and developments. Here I will list all the  submits and It will be fun. 🤞
+ ## This challenge is started on July 21, 2020 📅
+ ### In this challenge a submitted 30 little to medium size projects. Sometimes I did a little website component or sometimes some javaScript app as a submit. I did it to boost my HTML, CSS & JS skills. Down here you will find all the live previews and youTube videos (how I made it). Also here is the full playlist for this #30days30submits challenge => [playlist](https://www.youtube.com/playlist?list=PLRv_Gd5w9e7m7wokXmB9fGtGYw100UKc0).
 
 | day   | Project Name    | source Code/preview |                       YouTube Video       |
 | :---  | :-------------: | ------------------: |  ---------------------------------------: |
@@ -30,7 +32,7 @@
 | day-23 | Neon Light Effect | https://codepen.io/Web_Cifar/pen/MWyJENV | https://youtu.be/NLtUycloTnc  |
 | day-24 | Speech Recognition App | https://codepen.io/Web_Cifar/pen/jOqBEjE | https://youtu.be/-k-PgvbktX4  |
 | day-25 | Custom Slider | https://codepen.io/Web_Cifar/pen/bGpRwEr | https://youtu.be/V9TCxMMpGhI  |
-| day-26 | Bouncing DVD logo | https://codepen.io/Web_Cifar/pen/JjXrLRJ | Coming Soon 🔜  |
+| day-26 | Bouncing DVD logo | https://codepen.io/Web_Cifar/pen/JjXrLRJ | https://youtu.be/wMIARRCox9k  |
 | day-27 | Quiz APP | https://codepen.io/Web_Cifar/pen/dyMZxNg | Coming Soon 🔜  |
 | day-28 | Simple Calculator | https://codepen.io/Web_Cifar/pen/XWdVgXr | Coming Soon 🔜  |
 | day-29 | Weather APP | https://codepen.io/Web_Cifar/pen/gOrvMpR | Coming Soon 🔜  |
