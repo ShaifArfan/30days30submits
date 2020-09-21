@@ -36,4 +36,4 @@
 | day-27 | Quiz APP | https://codepen.io/Web_Cifar/pen/dyMZxNg | Coming Soon 🔜  |
 | day-28 | Simple Calculator | https://codepen.io/Web_Cifar/pen/XWdVgXr | Coming Soon 🔜  |
 | day-29 | Weather APP | https://codepen.io/Web_Cifar/pen/gOrvMpR | Coming Soon 🔜  |
-| day-30 | CSS Dot Loaders | https://codepen.io/Web_Cifar/pen/rNevXPx | Coming Soon 🔜  |
+| day-30 | CSS Dot Loaders | https://codepen.io/Web_Cifar/pen/rNevXPx | https://youtu.be/ENa4y_-fJAs  |
