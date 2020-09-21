@@ -5,17 +5,15 @@
   const qusEl = document.querySelector('.qus');
   const optionsEl = document.querySelector('.all_options');
   const buttonsEl = document.querySelector('.buttons');
-  const scoreEl = document.querySelector('.scoreBoard .score-num');/*  */
-  const answeredEl = document.querySelector('.scoreBoard .answered-num');/*  */
+  const scoreEl = document.querySelector('.scoreBoard .score-num');
+  const answeredEl = document.querySelector('.scoreBoard .answered-num');
 
   let question, answer;
   let options = [];
   let score = 0;
   let answeredQus = 0;
 
-  window.addEventListener('DOMContentLoaded', () => {
-    quizApp();
-  })
+  window.addEventListener('DOMContentLoaded', quizApp)
 
   async function quizApp() {
     updateScoreBoard();
@@ -69,22 +67,14 @@
     answeredQus++;
     if (selected === answer) {
       score++;
-      updateScoreBoard();
-      form.quiz.forEach(input => {
-        if (input.value === answer) {
-          input.parentElement.classList.add('correct')
-          // console.log(input)
-        }
-      })
-    } else {
-      updateScoreBoard();
-      form.quiz.forEach(input => {
-        if (input.value === answer) {
-          input.parentElement.classList.add('correct')
-          // console.log(input)
-        }
-      })
-    }
+    } 
+    updateScoreBoard();
+    form.quiz.forEach(input => {
+      if (input.value === answer) {
+        input.parentElement.classList.add('correct')
+        // console.log(input)
+      }
+    })
   }
 
   function generateButtons() {
