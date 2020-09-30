@@ -4,6 +4,7 @@ const details = document.querySelector('.details')
 
 formEl.addEventListener('submit', (e)=> {
   e.preventDefault();
+  details.innerHTML = '<h1>Loading...</h1>';
   const location = e.target.location.value;
   weatherApp(location);
   formEl.reset();
@@ -24,7 +25,7 @@ async function fetchWeather(location){
 
 function generateHTML(result){
   const html = `
-  <div class="temp">${result.current.temperature} °c</div>
+  <div class="temp">${result.current.temperature}°c</div>
   <div class="status">${result.current.weather_descriptions.map(item => item).join(' ')}</div>
   <div class="more-info">
     <div>Humidity- ${result.current.humidity} %</div>
