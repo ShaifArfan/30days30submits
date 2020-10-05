@@ -13,7 +13,6 @@ section{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   background-color: rgb(34, 34, 34);
   padding: 100px 0;
 }
@@ -21,15 +20,14 @@ section{
   width: 90%;
   max-width: 400px;
   background-color: #00919F;
+  margin: 0 auto;
   height: 600px;
   position: relative;
-  /* border: 5px solid rgb(165, 165, 165); */
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 1;
   overflow: hidden;
+  z-index: 1;
 }
 .container::after{
   position: absolute;
@@ -39,10 +37,9 @@ section{
   transform: translate(-50%, -50%);
   height: 120%;
   width: 120%;
-  background-color: rgba(36, 36, 36, 0.397);
-  background:url(./bg.jpg);
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./bg.jpg);
+  background-position: center;
   background-size: cover;
-  background-position: top center;
   filter: blur(3px);
   z-index: -1;
 }
@@ -54,7 +51,7 @@ form{
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
 }
 form input{
   width: 100%;
@@ -66,47 +63,43 @@ form input{
   padding: 10px;
   color: white;
 }
-form input::placeholder{
-  font-family: 'Montserrat';
-  letter-spacing: 1.2px;
-  color: white;
-  font-size: 17px;
-  opacity: .5;
-}
-form button{
+form button[type="submit"]{
   width: 100px;
   height: 100%;
   outline: none;
-  border:none;
+  border: none;
   cursor: pointer;
-  background-color: #565656;
-  font-size: 30px;
+  background-color: #676767;
   color: white;
+  font-size: 30px;
 }
 form button ion-icon{
-  margin-bottom: -8px;
+  margin-bottom: -6px;
+}
+form input::placeholder{
+  font-family: 'Montserrat';
+  letter-spacing: 1.2px;
+  font-size: 22px;
 }
 .container .details{
   width: 80%;
   margin: 0 auto;
-  background: #e0e0e0bf;
+  background-color: #dfbebe94;
   text-align: center;
   padding: 30px 10px;
   border-radius: 8px;
 }
-.container .pre-text{
-  font-size: 30px;
-  color: #2a2b2b;
-}
 .temp{
-  font-size: 40px;
+  font-size: 30px;
 }
 .status{
-  margin:10px 0 30px 0;
+  margin: 10px 0 30px 0;
 }
-.more-info div{
+.more-info p{
   margin: 10px 0;
+  font-size: 20px;
 }
+
 .query{
   margin-top: 20px;
 }

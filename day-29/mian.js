@@ -8,14 +8,13 @@ formEl.addEventListener('submit', (e)=> {
   const location = e.target.location.value;
   weatherApp(location);
   formEl.reset();
-  console.log(location)
 })
 async function weatherApp(location){
-  const result = await fetchWeather(location);
+  const result = await fetchAPI(location);
   generateHTML(result);
   
 }
-async function fetchWeather(location){
+async function fetchAPI(location){
   const baseURL = `https://cors-anywhere.herokuapp.com/http://api.weatherstack.com/current?access_key=${key}&query=${location}`;
   const res = await fetch(baseURL);
   const data = await res.json();
@@ -23,18 +22,17 @@ async function fetchWeather(location){
   return data;
 }
 
-function generateHTML(result){
+function generateHTML(data){
   const html = `
-  <div class="temp">${result.current.temperature}°c</div>
-  <div class="status">${result.current.weather_descriptions.map(item => item).join(' ')}</div>
+  <h1 class="temp">${data.current.temperature}°c</h1>
+  <h1 class="status">${data.current.weather_descriptions.map(item => item).join(' ')}</h1>
   <div class="more-info">
-    <div>Humidity- ${result.current.humidity} %</div>
-    <div>Wind Speed- ${result.current.wind_speed}km/h</div>
-    <div>Pressure- ${result.current.pressure} MB</div>
-    <div>Wind Dir- ${result.current.wind_dir}</div>
+    <p>Humidity- ${data.current.humidity}%</p>
+    <p>Wind Speed- ${data.current.wind_speed}km/h</p>
+    <p>Wind Dir- ${data.current.wind_dir}</p>
+    <p>Pressure- ${data.current.pressure}MB</p>
   </div>
-  <div class="query">${result.request.query}</div>
-  `
+  <div class="query">${data.request.query}</div>
+  `;
   details.innerHTML = html;
 }
-// fetchWeather('chittagong');
