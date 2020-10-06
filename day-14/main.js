@@ -7,11 +7,11 @@ function generateTime (){
   const format = clockEl.getAttribute('data-format');
   const date = new Date;
   let hour = date.getHours();
-  let timeStatus;
+  let timeStatus = '';
   const min = date.getMinutes();
   const sec = date.getSeconds();
-  timeStatus = (hour > 12) ? 'PM' : 'AM';
   if (format === '12') {
+    timeStatus = (hour >= 12) ? 'PM' : 'AM';
     hour = (hour > 12) ? hour % 12 : hour;
   }
   clockEl.innerHTML = `<h1>${hour} : ${min} : ${sec} ${timeStatus}</h1>`
