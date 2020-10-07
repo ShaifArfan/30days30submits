@@ -34,6 +34,6 @@
 | day-25 | Custom Slider | https://codepen.io/Web_Cifar/pen/bGpRwEr | https://youtu.be/V9TCxMMpGhI  |
 | day-26 | Bouncing DVD logo | https://codepen.io/Web_Cifar/pen/JjXrLRJ | https://youtu.be/wMIARRCox9k  |
 | day-27 | Quiz APP | https://codepen.io/Web_Cifar/pen/dyMZxNg | https://youtu.be/qXXM9nVxLWk  |
-| day-28 | Simple Calculator | https://codepen.io/Web_Cifar/pen/XWdVgXr | https://youtu.be/y0iCeKUsYMk  |
-| day-29 | Weather APP | https://codepen.io/Web_Cifar/pen/gOrvMpR | Coming Soon 🔜  |
+| day-28 | Simple Calculator | https://codepen.io/Web_Cifar/pen/XWdVgXr | Coming Soon 🔜  |
+| day-29 | Weather APP | https://codepen.io/Web_Cifar/pen/gOrvMpR | https://youtu.be/y0iCeKUsYMk |
 | day-30 | CSS Dot Loaders | https://codepen.io/Web_Cifar/pen/rNevXPx | https://youtu.be/ENa4y_-fJAs  |
