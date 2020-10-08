@@ -41,7 +41,7 @@ section{
   bottom: 0;
   left: 10;
   font-size: 20px;
-  opacity: .3;
+  opacity: .4;
 }
 .all_button{
   color: whitesmoke;
@@ -50,7 +50,6 @@ section{
 }
 .button{
   border: .5px solid rgba(92, 92, 92, 0.137);
-  display: inline-block;
   height: 100px;
   width: 100%;
   display: flex;
