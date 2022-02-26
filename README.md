@@ -4,6 +4,7 @@
 
  ## This challenge is started on July 21, 2020 📅
  ### In this challenge, I submitted 30 little to medium size projects. Sometimes I did a little website component or sometimes some javaScript app as a submit. I did it to boost my HTML, CSS & JS skills. Down here you will find all the live previews and youTube videos (how I made it). Also here is the full playlist for this #30days30submits challenge => [playlist](https://www.youtube.com/playlist?list=PLRv_Gd5w9e7m7wokXmB9fGtGYw100UKc0).
+ 
 
 | day   | Project Name    | source Code/preview |                       YouTube Video       |
 | :---  | :-------------: | ------------------: |  ---------------------------------------: |
@@ -37,3 +38,17 @@
 | day-28 | Simple Calculator | https://codepen.io/Web_Cifar/pen/XWdVgXr | https://youtu.be/0Vg4EiYPCUc  |
 | day-29 | Weather APP | https://codepen.io/Web_Cifar/pen/gOrvMpR | https://youtu.be/y0iCeKUsYMk |
 | day-30 | CSS Dot Loaders | https://codepen.io/Web_Cifar/pen/rNevXPx | https://youtu.be/ENa4y_-fJAs  |
+
+---
+
+### Made with ❤️ by [Shaif Arfan](https://www.instagram.com/shaifarfan08/)
+
+Like my works and want to support me?
+
+<a href="https://www.buymeacoffee.com/shaifarfan08" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162.75px !important;" ></a>
+
+---
+
+## Other projects
+
+📚 [All Web Cifar Project Tutorials](https://github.com/ShaifArfan/wc-project-tutorials)
