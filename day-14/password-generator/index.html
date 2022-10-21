@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <form id="pg-form">
+        <div class="result">
+          <input type="text" id="result" placeholder="Min 6 Char">
+          <div class="clipboard">
+            <ion-icon name="clipboard-outline"></ion-icon>
+          </div>
+        </div>
+        <div>
+          <div class="field">
+            <label for="length">Length</label>
+            <input type="number" id="length" value="12" min="6">
+          </div>
+          <div class="field">
+            <label for="capital">Capital Letter</label>
+            <input type="checkbox" id="capital" checked>
+          </div>
+          <div class="field">
+            <label for="small">Small Letter</label>
+            <input type="checkbox" id="small" checked>
+          </div>
+          <div class="field">
+            <label for="number">Number</label>
+            <input type="checkbox" id="number">
+          </div>
+          <div class="field">
+            <label for="symbol">Special Char</label>
+            <input type="checkbox" id="symbol">
+          </div>
+        </div>
+        <button type="submit">Generate Password</button>
+      </form>
+    </div>
+  </section>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

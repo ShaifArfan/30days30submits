@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background-color: rgb(22, 25, 27);
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(212, 212, 212);
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.container {
+  padding: 30px;
+  background-color: #303538;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #00000011;
+  width: 90%;
+  max-width: 400px;
+}
+form {
+  width: 100%;
+  font-size: 20px;
+}
+.result {
+  background-color: rgb(220, 233, 243);
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.result #result {
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 10px;
+}
+.result .clipboard {
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;
+  background-color: royalblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.field input[type="number"] {
+  width: 50px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  padding-right: 0px;
+  font-size: 16px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 4px;
+}
+.field {
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding-right: 10px;
+  transition: 0.3s ease background-color;
+}
+.field:first-of-type {
+  padding-right: 0;
+}
+.field:hover {
+  background-color: rgb(26, 29, 31);
+}
+.field label {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.field input {
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: royalblue;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 678px) {
+  .field {
+    font-size: 16px;
+  }
+}
