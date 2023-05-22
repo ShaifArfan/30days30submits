@@ -5,11 +5,28 @@ let searchQuery = '';
 const APP_ID = "Use Your Own App ID Here";
 const APP_key = "Use Your Own App Key Here";
 // console.log(container)
-searchForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  searchQuery = e.target.querySelector('input').value;
-  fetchAPI();
-})
+
+
+    searchForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+        searchQuery = e.target.querySelector('input').value;
+        console.log(searchQuery)
+        if(searchQuery==''){
+          alert('please provide value')
+        }
+        await fetchAPI();
+      })
+   
+ // fetchAPI();
+
+    
+  
+
+// searchForm.addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   searchQuery = e.target.querySelector('input').value;
+//   fetchAPI();
+// })
 
 async function fetchAPI(){
   const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}&from=0&to=20`;
