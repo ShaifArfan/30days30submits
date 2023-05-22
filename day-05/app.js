@@ -3,14 +3,18 @@ const timeH = document.querySelector('h1');
 
 displayTime(5);
 
-const countDown = setInterval(()=>{
+const countDown = setInterval(timer, 1000);
+
+function timer() {
   timeSecond--;
-  displayTime(timeSecond);
-  if(timeSecond == 0 || timeSecond < 1){
-    endCount();
-    clearInterval(countDown);
-  }
-}, 1000);
+  console.log(timeSecond)
+   displayTime(timeSecond);
+  
+   if(timeSecond == 0 || timeSecond < 1){
+     endCount();
+     clearInterval(countDown);
+   }
+}
 
 function displayTime(second){
   const min = Math.floor(second / 60);
